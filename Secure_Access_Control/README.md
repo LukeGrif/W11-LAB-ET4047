@@ -82,6 +82,8 @@ The correct code is **1-3-2**.
 Attack your Task 4 lock, then save a copy as `Task5_Secure` and fix at least
 two of the weaknesses yourself. No solution code is provided.
 
+![Attack surface](images/attacks.png)
+
 ---
 
 ## Repository Contents
