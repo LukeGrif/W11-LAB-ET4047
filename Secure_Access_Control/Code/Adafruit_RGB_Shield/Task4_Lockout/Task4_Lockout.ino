@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (Adafruit RGB LCD shield version)
+// ET4047 Week 11 - Secure Access Control (Adafruit RGB LCD shield version)
 // Task 4: Authentication with attempt counter, lockout and timeout
 // Adds the LOCKOUT state to the Task 3 FSM. All timing uses millis().
 // Needs the buttons.h tab.

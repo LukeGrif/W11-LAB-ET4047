@@ -1,9 +1,9 @@
-# Secure Access Control (ET4047 · Week 10 · Lab 9)
+# Secure Access Control (ET4047 · Week 11 · Lab 9)
 
 **Module:** ET4047 · **Author:** Luke Griffin
 **University of Limerick — Department of Electronic & Computer Engineering**
 
-📄 **View the full lab document online:** https://lukegrif.github.io/W10-LAB-ET4047/viewer.html?lab=secure
+📄 **View the full lab document online:** https://lukegrif.github.io/W11-LAB-ET4047/viewer.html?lab=secure
 
 ---
 
@@ -99,8 +99,8 @@ folder and opens as a second tab.
 
 | Path | Description |
 |------|-------------|
-| `W10_LAB_Secure_Access_Control.pdf` | The lab document |
-| `W10 LAB Secure Access Control.docx` | Editable Word version |
+| `W11_LAB_Secure_Access_Control.pdf` | The lab document |
+| `W11 LAB Secure Access Control.docx` | Editable Word version |
 | `Code/I2C_Backpack/` | One folder per task, for the I2C backpack LCD |
 | `Code/Adafruit_RGB_Shield/` | One folder per task, for the Adafruit RGB LCD shield |
 | `images/` | Figures used in the lab document |

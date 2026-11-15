@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (I2C backpack LCD version)
+// ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Task 4: Authentication with attempt counter, lockout and timeout
 // Adds the LOCKOUT state to the Task 3 FSM. All timing uses millis().
 // Needs the buttons.h tab.

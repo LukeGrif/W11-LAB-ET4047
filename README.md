@@ -1,9 +1,9 @@
-# Week 10 Lab — ET4047 Embedded Software
+# Week 11 Lab — ET4047 Embedded Software
 
 **Module:** ET4047 · **Author:** Luke Griffin
 **University of Limerick — Department of Electronic & Computer Engineering**
 
-🌐 **Open the lab online:** https://lukegrif.github.io/W10-LAB-ET4047/
+🌐 **Open the lab online:** https://lukegrif.github.io/W11-LAB-ET4047/
 
 ---
 

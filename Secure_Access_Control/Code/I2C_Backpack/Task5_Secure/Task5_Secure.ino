@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (I2C backpack LCD version)
+// ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Task 5: Security improvements to the Task 4 lock
 //   [1] Code is masked with '*' (no shoulder surfing)
 //   [2] Denied screen gives no hints (no "tries left")

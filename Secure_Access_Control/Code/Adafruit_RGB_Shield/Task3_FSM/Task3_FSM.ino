@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (Adafruit RGB LCD shield version)
+// ET4047 Week 11 - Secure Access Control (Adafruit RGB LCD shield version)
 // Task 3: Finite State Machine
 // IDLE -> ENTER_CODE -> ACCESS_GRANTED / ACCESS_DENIED -> IDLE
 // Needs the buttons.h tab.

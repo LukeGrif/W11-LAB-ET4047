@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (I2C backpack LCD version)
+// ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Task 2: Debounced buttons and code entry
 // Each press is counted once. The LCD shows the code typed so far
 // and compares raw edges (with bounce) against clean presses.

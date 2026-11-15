@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (I2C backpack LCD version)
+// ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Task 1: Hardware test
 // Shows the state of every button and switch on the LCD.
 // Button 1 lights the green LED, Button 2 lights the red LED.

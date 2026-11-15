@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Week 10 Lab</title>
+<title>Week 11 Lab</title>
 <style>
   html, body {
     margin: 0;
@@ -78,10 +78,10 @@
     pdfjsLib.GlobalWorkerOptions.workerSrc =
       "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.worker.min.mjs";
 
-    // The Week 10 lab; the landing page (index.html) links here with ?lab=<key>
+    // The Week 11 lab; the landing page (index.html) links here with ?lab=<key>
     const LABS = {
       secure: { title: "Secure Access Control with a Finite State Machine",
-                pdf: "Secure_Access_Control/W10_LAB_Secure_Access_Control.pdf" },
+                pdf: "Secure_Access_Control/W11_LAB_Secure_Access_Control.pdf" },
     };
     const lab = LABS[new URLSearchParams(location.search).get("lab")];
     // No lab chosen (or an unknown one): send the reader back to choose first
@@ -89,7 +89,7 @@
       location.replace("./");
       throw new Error("No lab selected");
     }
-    document.title = "Week 10 — " + lab.title;
+    document.title = "Week 11 — " + lab.title;
     const PDF_URL = lab.pdf;
     const MAX_PAGE_WIDTH = 850;    // a page won't render wider than this
     const TWO_UP_MIN = 960;        // window must be at least this wide to show 2 pages

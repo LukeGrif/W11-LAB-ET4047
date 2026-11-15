@@ -1,4 +1,4 @@
-// ET4047 Week 10 - Secure Access Control (I2C backpack LCD version)
+// ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Extension: operating modes with three switches (Task 5 + switches)
 //   SW1 (D5) ON  = system enabled    OFF = SYSTEM OFF, keypad ignored
 //   SW2 (D6) ON  = enhanced security: 5 s to enter the code (not 10 s)
