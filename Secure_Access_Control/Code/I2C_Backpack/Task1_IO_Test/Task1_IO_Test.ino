@@ -1,6 +1,6 @@
 // ET4047 Week 11 - Secure Access Control (I2C backpack LCD version)
 // Task 1: Hardware test
-// Shows the state of every button and switch on the LCD.
+// Shows the state of every button on the LCD.
 // Button 1 lights the green LED, Button 2 lights the red LED.
 
 #include <Wire.h>
@@ -11,7 +11,6 @@
 LiquidCrystal_I2C lcd(0x20, 16, 2);
 
 const byte BUTTON_PINS[3] = {2, 3, 4};   // B1, B2, B3
-const byte SWITCH_PINS[3] = {5, 6, 7};   // SW1, SW2, SW3 (Extension only)
 const byte LED_GREEN = 8;
 const byte LED_RED   = 9;
 
@@ -25,7 +24,6 @@ void setup() {
 
   for (byte i = 0; i < 3; i++) {
     pinMode(BUTTON_PINS[i], INPUT_PULLUP);
-    pinMode(SWITCH_PINS[i], INPUT_PULLUP);
   }
   pinMode(LED_GREEN, OUTPUT);
   pinMode(LED_RED, OUTPUT);
@@ -40,14 +38,6 @@ void loop() {
   lcd.print("Button: ");
   for (byte i = 0; i < 3; i++) {
     lcd.print(isPressed(BUTTON_PINS[i]) ? '1' : '0');
-    lcd.print(' ');
-  }
-
-  // Row 1: switches (1 = ON, connected to GND)
-  lcd.setCursor(0, 1);
-  lcd.print("Switch: ");
-  for (byte i = 0; i < 3; i++) {
-    lcd.print(isPressed(SWITCH_PINS[i]) ? '1' : '0');
     lcd.print(' ');
   }
 

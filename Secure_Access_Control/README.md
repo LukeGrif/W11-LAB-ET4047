@@ -30,7 +30,6 @@ attack the lock, and fix what you find.
 | Push buttons | 3 |
 | LEDs + 220 Ω resistors (green, red) | 2 |
 | 16×2 LCD with I2C backpack, **or** Adafruit RGB LCD shield | 1 |
-| Slide switches or jumper wires (Extension only) | 3 |
 
 ### Pick the code for your LCD
 
@@ -48,10 +47,11 @@ address `0x20`; if the screen stays blank, try `0x27`.
 | Part | Pin | Part | Pin |
 |------|-----|------|-----|
 | B1 / B2 / B3 | D2 / D3 / D4 | Green LED | D8 |
-| SW1 / SW2 / SW3 | D5 / D6 / D7 | Red LED | D9 |
+| Red LED | D9 | LCD VCC | 5V |
 | LCD SDA | A4 | LCD SCL | A5 |
+| LCD GND | GND | | |
 
-Buttons and switches go pin → part → GND. LEDs go pin → 220 Ω → LED → GND.
+Buttons go pin → button → GND. LEDs go pin → 220 Ω → LED → GND.
 
 ![Wiring](images/wiring.png)
 
@@ -65,33 +65,22 @@ Buttons and switches go pin → part → GND. LEDs go pin → 220 Ω → LED →
 | 2 | Debouncing and code entry | 20 min | `Task2_Debounce` |
 | 3 | The finite state machine | 20 min | `Task3_FSM` |
 | 4 | Attempt counter and lockout | 20 min | `Task4_Lockout` |
-| 5 | Cybersecurity challenge | 20 min | `Task5_Secure` |
-| Ext | Operating modes with switches | optional | `Extension_Switches` |
+| 5 | Cybersecurity challenge | 20 min | You write this one |
 
-Every task folder is inside both `Code/I2C_Backpack/` and `Code/Adafruit_RGB_Shield/`.
-Open the `.ino` in the Arduino IDE; from Task 3 on, `buttons.h` is in the same
+Tasks 1–4 are inside both `Code/I2C_Backpack/` and `Code/Adafruit_RGB_Shield/`.
+Open the `.ino` in the Arduino IDE; for Tasks 3 and 4, `buttons.h` is in the same
 folder and opens as a second tab.
 
 ![LCD screens](images/lcd_states.png)
 
-### Codes
+### Code
 
-| Mode | Code |
-|------|------|
-| Normal | 1-3-2 |
-| Maintenance (Extension, SW3 ON) | 3-2-1 |
+The correct code is **1-3-2**.
 
-### What Task 5 changes
+### Task 5
 
-| Fix | Change | Attack it slows down |
-|-----|--------|----------------------|
-| [1] | Code masked as `* * _` | Shoulder surfing |
-| [2] | No "tries left" on the denied screen | Information leakage |
-| [3] | Progressive lockout 10 → 20 → 40 … 160 s | Brute force |
-| [4] | Failed attempts kept in EEPROM | RESET / power cycle during lockout |
-| [5] | Every digit always compared | Timing |
-
-![Attack surface](images/attacks.png)
+Attack your Task 4 lock, then save a copy as `Task5_Secure` and fix at least
+two of the weaknesses yourself. No solution code is provided.
 
 ---
 
